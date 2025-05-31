@@ -1,0 +1,154 @@
+/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f2;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: #ffe0e9;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #d6336c;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #5c5c5c;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #7c4dff;
+}
+
+/* Books Section */
+#books .book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book {
+  background: #f3e5f5;
+  padding: 15px;
+  border-left: 5px solid #7c4dff;
+  border-radius: 10px;
+}
+
+/* Music Section */
+#music .music-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.embed iframe {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.extra-content {
+  margin-top: 20px;
+}
+
+#generate-song {
+  padding: 10px 20px;
+  background-color: #ffd6e8;
+  color: #d6336c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#generate-song:hover {
+  background-color: #f9b8cd;
+}
+
+#song-output {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #6a1b9a;
+}
+
+/* Wallpapers */
+.wallpapers {
+  margin-top: 20px;
+}
+
+.wallpapers img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Love Letter */
+#letter {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+#letter p {
+  margin-bottom: 15px;
+}
+
+/* Memories */
+#memories {
+  margin-top: 40px;
+}
+
+.slideshow {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.slideshow img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.story-snippet {
+  margin-top: 20px;
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #ff9800;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #999;
+}
