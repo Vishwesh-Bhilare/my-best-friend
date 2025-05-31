@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🎁 Virtual Gift for My Friend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎁 A Special Website for You</h1>
+    <p>Made with love 💖</p>
+  </header>
+
+  <section id="books">
+    <h2>📚 Favorite Books</h2>
+    <div class="book-list">
+      <div class="book">
+        <h3>Book Title One</h3>
+        <p>A beautiful quote or a tiny review.</p>
+      </div>
+      <div class="book">
+        <h3>Book Title Two</h3>
+        <p>A line of fan art or indie bookstore link.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>🎶 TXT & Conan Gray</h2>
+    <div class="music-content">
+      <div class="embed">
+        <h3>TXT Playlist</h3>
+        <iframe src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="embed">
+        <h3>Conan Gray Faves</h3>
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" width="300" height="170" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="extra-content">
+        <button id="generate-song">🎵 TXT Song of the Day</button>
+        <p id="song-output"></p>
+
+        <div class="wallpapers">
+          <h3>🖼 Conan Gray Quote Wallpapers</h3>
+          <img src="conan-wallpaper1.jpg" alt="Conan Quote 1">
+          <img src="conan-wallpaper2.jpg" alt="Conan Quote 2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="letter">
+    <h2>💌 Love Letter</h2>
+    <p>Dear [Friend's Name],</p>
+    <p>
+      I just wanted to say how grateful I am for you. You've been there in my happiest and darkest days. This little website is my way of saying thank you 💕.
+    </p>
+    <p>Forever your friend, <br><strong>[Your Name]</strong></p>
+  </section>
+
+  <section id="memories">
+    <h2>📸 Our Memories</h2>
+    <div class="slideshow">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+    </div>
+    <div class="story-snippet">
+      <h3>Mini-Novel: Chapter 1</h3>
+      <p>Once upon a time, two amazing people crossed paths...</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💗 by [Your Name]</p>
+  </footer>
+
+  <script>
+    const songs = ["Blue Hour", "Anti-Romantic", "0X1=LOVESONG", "Magic", "CROWN"];
+    document.getElementById("generate-song").addEventListener("click", () => {
+      const randomSong = songs[Math.floor(Math.random() * songs.length)];
+      document.getElementById("song-output").textContent = `Your song today is: ${randomSong} 🎶`;
+    });
+  </script>
+
+</body>
+</html>
