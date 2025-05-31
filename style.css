@@ -64,8 +64,12 @@ section h2 {
 }
 
 .embed iframe {
+  width: 90%;
+  max-width: 600px;
+  height: 300px; /* Taller and more visible */
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .extra-content {
@@ -153,4 +157,10 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #999;
+}
+
+.embed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
