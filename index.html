@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🎁 Virtual Gift for My Friend</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="particles-js"></div>
@@ -29,27 +32,27 @@
   </section>
 
   <section id="music">
-  <h2>🎶 TXT & Conan Gray</h2>
-  <div class="music-wrapper">
-    <div class="music-card">
-      <h3>TXT Playlist</h3>
-      <iframe 
-        src="https://open.spotify.com/embed/playlist/41BClsnymzZo1Tc3xCroHO" 
-        frameborder="0"
-        allowtransparency="true"
-        allow="encrypted-media">
-      </iframe>
+    <h2>🎶 TXT & Conan Gray</h2>
+    <div class="music-wrapper">
+      <div class="music-card">
+        <h3>TXT Playlist</h3>
+        <iframe 
+          src="https://open.spotify.com/embed/playlist/41BClsnymzZo1Tc3xCroHO" 
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+      <div class="music-card">
+        <h3>Conan Gray - Heather</h3>
+        <iframe 
+          src="https://www.youtube.com/embed/qMHkWgOE6X8" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
-    <div class="music-card">
-      <h3>Conan Gray - Heather</h3>
-      <iframe 
-        src="https://www.youtube.com/embed/qMHkWgOE6X8" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="letter">
     <h2>💌 Love Letter</h2>
@@ -63,9 +66,16 @@
   <section id="memories">
     <h2>📸 Our Memories</h2>
     <div class="slideshow">
-      <img src="photo1.jpg" alt="Memory 1">
-      <img src="photo2.jpg" alt="Memory 2">
+      <div class="polaroid">
+        <img src="images/photo1.jpg" alt="Memory 1" />
+        <p>Our first hangout 💬</p>
+      </div>
+      <div class="polaroid">
+        <img src="images/photo2.jpg" alt="Memory 2" />
+        <p>A random funny day 😄</p>
+      </div>
     </div>
+
     <div class="story-snippet">
       <h3>Mini-Novel: Chapter 1</h3>
       <p>Once upon a time, two amazing people crossed paths...</p>
@@ -76,6 +86,8 @@
     <p>Made with 💗 by [Your Name]</p>
   </footer>
 
+  <!-- TXT Song Generator Script (Optional, hidden now) -->
+  <!--
   <script>
     const songs = ["Blue Hour", "Anti-Romantic", "0X1=LOVESONG", "Magic", "CROWN"];
     document.getElementById("generate-song").addEventListener("click", () => {
@@ -83,26 +95,27 @@
       document.getElementById("song-output").textContent = `Your song today is: ${randomSong} 🎶`;
     });
   </script>
+  -->
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 60 },
-      "size": { "value": 4 },
-      "color": { "value": "#ffb6c1" },
-      "opacity": { "value": 0.6 },
-      "move": { "speed": 1 },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#d6336c",
-        "opacity": 0.3,
-        "width": 1
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "size": { "value": 4 },
+        "color": { "value": "#ffb6c1" },
+        "opacity": { "value": 0.6 },
+        "move": { "speed": 1 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#d6336c",
+          "opacity": 0.3,
+          "width": 1
+        }
       }
-    }
-  });
-</script>
-
+    });
+  </script>
 </body>
 </html>
