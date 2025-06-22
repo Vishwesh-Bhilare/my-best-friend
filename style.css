@@ -63,14 +63,16 @@ section h2 {
   gap: 25px;
 }
 
+/* 
 .embed iframe {
   width: 90%;
   max-width: 600px;
-  height: 300px; /* Taller and more visible */
+  height: 300px; /* Taller and more visible 
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+*/
 
 .extra-content {
   margin-top: 20px;
