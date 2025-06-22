@@ -201,3 +201,28 @@ footer {
 .music-card iframe[src*="youtube"] {
   height: 400px;
 }
+
+/* Falling Sakura Petals */
+.sakura {
+  position: fixed;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('images/sakura.png');
+  background-size: cover;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 9999;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
