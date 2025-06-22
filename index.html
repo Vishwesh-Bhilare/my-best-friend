@@ -83,5 +83,18 @@
     });
   </script>
 
+  <script>
+  // Sakura Petal Animation
+  const totalPetals = 20;
+
+  for (let i = 0; i < totalPetals; i++) {
+    let petal = document.createElement("div");
+    petal.classList.add("sakura");
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDelay = Math.random() * 5 + "s";
+    document.body.appendChild(petal);
+  }
+</script>
+
 </body>
 </html>
